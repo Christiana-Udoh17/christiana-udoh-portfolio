@@ -1,0 +1,230 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 20px;
+}
+.nav-connect {
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  background: linear-gradient(
+    135deg,
+    #203f99 0%,
+    #304c9f 20%,
+    #b4c5e4 50%,
+    #3066be 80%,
+    #ff8a5b 100%
+  );
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li:hover {
+  background-color: #b4c5e4;
+  padding: 5px 7px;
+  border-radius: 3px;
+}
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.anchor-link {
+  text-decoration: none;
+  color: #3f3f3e;
+}
+
+.nav-mob-open,
+.nav-mob-close {
+  display: none;
+  width: 28px;
+  cursor: pointer;
+}
+
+.nav-mob-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #b4c5e4;
+    padding: 0 20px;
+  }
+  /* Show hamburger by default on small screens */
+  .nav-mob-open {
+    display: block;
+  }
+
+  /* Close button hidden until menu is opened */
+  .nav-mob-close {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+  }
+
+  /* Mobile nav menu */
+  .nav-menu {
+    flex-direction: column;
+    background: #b4c5e4;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 50vw;
+    height: 100vh;
+    padding: 70px 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+    overflow-x: hidden;
+  }
+  .nav-menu li {
+    margin: 10px 0;
+    gap: 8px;
+  }
+
+  /* Hide Connect With Me on mobile */
+  .nav-connect {
+    display: none;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 17px;
+
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 20px;
+}
+.nav-connect {
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  background: linear-gradient(
+    135deg,
+    #203f99 0%,
+    #304c9f 20%,
+    #b4c5e4 50%,
+    #3066be 80%,
+    #ff8a5b 100%
+  );
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.anchor-link {
+  text-decoration: none;
+  color: #3f3f3e;
+}
+
+.nav-mob-open,
+.nav-mob-close {
+  display: none;
+  width: 28px;
+  cursor: pointer;
+}
+
+.nav-mob-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #b4c5e4;
+    padding: 0 20px;
+  }
+  /* Show hamburger by default on small screens */
+  .nav-mob-open {
+    display: block;
+  }
+
+  /* Close button hidden until menu is opened */
+  .nav-mob-close {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+  }
+
+  /* Mobile nav menu */
+  .nav-menu {
+    flex-direction: column;
+    background: #b4c5e4;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 50vw;
+    height: 100vh;
+    padding: 70px 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+  }
+  .nav-menu li {
+    margin: 10px 0;
+    gap: 8px;
+  }
+
+  /* Hide Connect With Me on mobile */
+  .nav-connect {
+    display: none;
+  }
+}
